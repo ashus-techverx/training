@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'calender/show'
+
   get 'thecustomroute' => 'user#show'
   get 'user/show2'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
