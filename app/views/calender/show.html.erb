@@ -1,0 +1,11 @@
+<h1>Calender#show</h1>
+
+
+<h3>The time right now is </h3>
+<h3><%= @time %> </h3></br></br>
+
+<h3> CALENDAR </h3>
+<p> pass this /calender/show?month=#{month - 1}&year=2013 for the page to work<p>
+<% day_of_the_week = @time.strftime("%w").to_i%>
+
+<%= calender(@month, @year).html_safe %>
